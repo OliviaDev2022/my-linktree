@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Lao&family=Playfair+Display:wght@500&display=swap');
 
 :root {
- --bgColor: #ae4363;
+ --bgColor: #31569c;
  --bgColor2: #090a0f;
  --accentColor: wheat;
- --delay: .3s;
+ --delay: .2s;
 }
 
 body {
@@ -112,10 +112,10 @@ text-decoration: none;
 
  /*  animation   */
  overflow: hidden;
- background: linear-gradient(20deg, var(--bgColor), black, var(--bgColor));
+ background: linear-gradient(20deg, var(--bgColor), rgb(242, 255, 0), var(--bgColor));
  background-repeat: no-repeat;
  background-size: 80%;
- animation: animate 8s linear var(--delay) infinite;
+ animation: animate 7s linear var(--delay) infinite;
  -webkit-background-clip: text;
  background-clip: text;
  -webkit-text-fill-color: rgba(255, 255, 255, 0);
@@ -761,12 +761,12 @@ text-decoration: none;
  }
 
  #links {
-  max-width: 460px;
+  max-width: 620px;
  }
 }
 
 @media screen and (min-width: 1200px) {
- 
+
  #profilePicture, #profilePicture img {
   margin-top: 7%;
  }
@@ -782,6 +782,7 @@ text-decoration: none;
  }
  
  #moto {
-  padding-top: 8%;
+  padding-top: 5%;
+  font-size: 1.5rem;
 }
 }
