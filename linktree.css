@@ -27,20 +27,20 @@ body {
 h1 { 
  padding-top: 3%;
  margin-bottom: 3%;
- font-size: 1rem;
+ font-size: 0.8rem;
  font-family: 'Playfair Display', serif;
  line-height: 1.5;
 }
 
 img {
- width: 14.94em;
- height: 14em;
+ width: 9.95rem;
+ height: 8rem;
  border-radius: 1% 1%;
 }
 
 .card {
  position: relative;
- width: 15rem;
+ width: 10rem;
  margin-top: 6%;
  margin-bottom: 1%;
  align-self: center;
@@ -48,7 +48,7 @@ img {
 }
 
 .card-footer{
- font-size: 16px;
+ font-size: 0.8rem;
  font-weight: bold;
  height: 2.5rem;
  padding-bottom: 1rem;
@@ -60,17 +60,18 @@ text-decoration: none;
 
 #profilePicture, #profilePicture img {
  position: relative;
- width: 96px;
- height: 96px;
+ width: 90px;
+ height: 90px;
  display: block;
  margin: 40px auto 20px;
  border-radius: 50%;
  -webkit-tap-highlight-color: transparent;
- margin-top: 15%;
+ margin-top: 5%;
 }
 
-#userName {
- font-size: 1rem;
+#userName { 
+ padding-top: 0;
+ font-size: 0.8rem;
  font-weight: bold;
  display: block;
  width: 100%;
@@ -80,7 +81,7 @@ text-decoration: none;
  max-width: 320px;
  width: auto;
  display: block;
- margin: 20px auto;
+ margin: 10px auto;
 }
 
 .link {
@@ -94,7 +95,7 @@ text-decoration: none;
  display: block;
  margin-left: 10px;
  margin-right: 10px;
- margin-bottom: 10px;
+ margin-bottom: 5px;
  padding: 3px; 
  text-decoration: none;
  /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
@@ -103,8 +104,8 @@ text-decoration: none;
 
 #moto {
  position: relative;
- padding-top: 30px;
- font-size: 1rem;
+ padding-top: 2%;
+ font-size: 0.8rem;
  display: block;
  font-family: var(--font);
  width: 100%;
@@ -716,14 +717,23 @@ text-decoration: none;
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
 
-@media screen and (min-width: 428px) {
-  
- .card {
-  margin-top: 8%;
+@media screen and (min-width: 400px) {
+
+ h1, #userName {
+  font-size: 1.2rem;
  }
- 
- #profilePicture, #profilePicture img {
-  margin-top: 20%;
+
+ img {
+  width: 17.98rem;
+  height: 16rem;
+ }
+   
+ .card {
+  width: 18rem;
+ }
+   
+ .card-footer, #moto {
+  font-size: 1rem;
  }
  
  .link {
@@ -731,19 +741,27 @@ text-decoration: none;
  }
  
  #moto {
-  padding-top: 12%;
-}
+  padding-top: 7%;
+ }
+
+ #links {
+    max-width: 420px;
+ }
 }
 
 @media screen and (min-width: 768px) {
 
- h1 {
+ h1, #userName {
   font-size: 1.5rem;
+ }
+
+ #userName {
+  margin-top: 10%;
  }
   
  .card {
   width: 22rem;
-  margin-top: 3%;
+  margin-top: 6%;
  }
  
  img {
@@ -752,6 +770,7 @@ text-decoration: none;
  }
 
  #profilePicture, #profilePicture img {
+  padding-top: 7%;
   width: 175px;
   height: 175px;
  }
@@ -768,7 +787,11 @@ text-decoration: none;
 @media screen and (min-width: 1200px) {
 
  #profilePicture, #profilePicture img {
-  margin-top: 7%;
+  margin-top: 1%;
+ }
+
+ h1 {
+  padding-top: 1%;
  }
   
  .card {
@@ -784,5 +807,5 @@ text-decoration: none;
  #moto {
   padding-top: 5%;
   font-size: 1.5rem;
-}
+ }
 }
